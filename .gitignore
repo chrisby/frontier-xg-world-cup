@@ -2,6 +2,8 @@
 __pycache__/
 *.pyc
 .venv/
+.DS_Store
+.claude/
 
 # Secrets — never commit
 kalshi_private_key.txt
