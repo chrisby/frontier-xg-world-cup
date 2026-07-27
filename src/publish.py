@@ -1,18 +1,20 @@
-"""Publish the structured analysis to the public Hugo site (static/wc2026).
+"""Publish the structured analysis as JSON for the public site.
 
 One structured result per analyzed match is written as JSON; the public page
 reads it. Only the latest analysis per game is kept (each run overwrites).
-Writes into the existing Hugo site's static/ dir so it deploys verbatim and
-never touches Hugo content/layouts.
+
+Set PUBLISH_DIR env var to point at your site's data directory.
+Default: ./public/wc2026 (relative to project root).
 """
 import json
+import os
 import time
 from pathlib import Path
 
 from . import config
 from .teams import canon_team
 
-SITE = Path("~/Documents/Website/static/wc2026").expanduser()
+SITE = Path(os.environ.get("PUBLISH_DIR", "")).expanduser() if os.environ.get("PUBLISH_DIR") else config.ROOT / "public" / "wc2026"
 DATA = SITE / "data"
 DOSS = DATA / "dossiers"
 

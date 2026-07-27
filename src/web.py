@@ -5,6 +5,7 @@ are cheap; analyze triggers a reasoning pass; place submits signed orders.
 Run: python -m src.web   (then open http://127.0.0.1:5000)
 """
 import json
+import os
 import threading
 import time
 from datetime import datetime, timezone
@@ -226,26 +227,25 @@ def futures_progress():
 _DEPLOY = {"status": "idle", "text": ""}
 
 
-def _run_deploy_bg():
-    import subprocess
-    _DEPLOY["status"] = "running"
-    try:
-        site_dir = Path("~/Documents/Website").expanduser()
-        r = subprocess.run(["./deploy.sh"], cwd=site_dir, capture_output=True,
-                           text=True, timeout=600)
-        _DEPLOY["text"] = (r.stdout + r.stderr)[-4000:]
-        _DEPLOY["status"] = "done" if r.returncode == 0 else "error"
-    except Exception as e:  # noqa: BLE001
-        _DEPLOY["text"] = f"Error: {e}"
-        _DEPLOY["status"] = "error"
-
-
 @app.route("/api/deploy", methods=["POST"])
 def deploy():
-    """Run the Hugo build + rsync push to the live site, in the background."""
-    if _DEPLOY["status"] != "running":
-        _DEPLOY["text"] = ""
-        threading.Thread(target=_run_deploy_bg, daemon=True).start()
+    """Placeholder — wire up your own deploy script via DEPLOY_CMD env var or override this endpoint."""
+    deploy_cmd = os.environ.get("DEPLOY_CMD", "")
+    if not deploy_cmd:
+        return jsonify({"ok": False, "status": "error",
+                        "text": "No DEPLOY_CMD configured. Set DEPLOY_CMD in your .env to a script that builds and pushes your site."})
+    import subprocess
+    _DEPLOY["status"] = "running"
+    _DEPLOY["text"] = ""
+    def _run():
+        try:
+            r = subprocess.run(deploy_cmd, shell=True, capture_output=True, text=True, timeout=600)
+            _DEPLOY["text"] = (r.stdout + r.stderr)[-4000:]
+            _DEPLOY["status"] = "done" if r.returncode == 0 else "error"
+        except Exception as e:  # noqa: BLE001
+            _DEPLOY["text"] = f"Error: {e}"
+            _DEPLOY["status"] = "error"
+    threading.Thread(target=_run, daemon=True).start()
     return jsonify({"ok": True, "status": "running"})
 
 
