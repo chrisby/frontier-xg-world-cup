@@ -133,15 +133,9 @@ calibration turns negative over the settled sample. Every threshold lives in
 ## Data & licensing
 
 This is a personal research project, published for transparency — not a product,
-a tipping service, or financial advice.
+a tipping service, or financial advice. We publish our own derived analysis
+(ratings, dossiers, bets), not the raw SportMonks feed.
 
-- **What we publish vs. what we don't.** We *do* publish our derived analysis —
-  the reasoned ratings, per-match dossiers, lessons, and the full bet ledger
-  (`data/`). What we don't ship is the **raw SportMonks feed**: the API cache
-  (`data/cache.db`) and raw results dumps stay out. Under SportMonks' terms this
-  is the important line — building on their data and even distributing the result
-  is permitted; reselling the raw feed is not. Any team logos or photos remain
-  their owners'.
 - **Bring your own keys.** Running your own copy needs your own **SportMonks**
   license (priced per domain), **Anthropic** API key, and — to place real orders —
   **Kalshi** trading credentials. See `.env.example`.
