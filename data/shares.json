@@ -1,0 +1,297 @@
+{
+ "Czech Republic": {
+  "Ladislav Krejci": 0.5,
+  "Michal Sad\u00edlek": 0.5
+ },
+ "South Africa": {
+  "Thapelo Maseko": 0.5,
+  "Teboho Mokoena": 0.5
+ },
+ "Korea Republic": {
+  "Hyeon-gyu Oh": 0.25,
+  "In-beom Hwang\u00a0": 0.25,
+  "Jun-ho Bae": 0.5
+ },
+ "Bosnia and Herzegovina": {
+  "Jovo Lukic": 0.2,
+  "Ermin Mahmic": 0.4,
+  "Kerim Alajbegovic": 0.2,
+  "Nihad Mujakic": 0.2
+ },
+ "Canada": {
+  "Stephen Eustaquio": 0.125,
+  "Promise David": 0.125,
+  "Cyle Larin": 0.25,
+  "Jonathan David": 0.375,
+  "Nathan-Dylan Saliba": 0.125
+ },
+ "Qatar": {
+  "Hasan Al-Haydos\u00a0": 1.0
+ },
+ "Switzerland": {
+  "Rub\u00e9n Vargas": 0.2,
+  "Granit Xhaka": 0.1,
+  "Johan Manzambi": 0.3,
+  "Dan Ndoye": 0.2,
+  "Breel Embolo": 0.2
+ },
+ "Brazil": {
+  "Casemiro": 0.1,
+  "Gabriel Martinelli": 0.1,
+  "Neymar\u00a0": 0.1,
+  "Matheus Cunha": 0.3,
+  "Vinicius Junior": 0.4
+ },
+ "Morocco": {
+  "Soufiane Rahimi": 0.2,
+  "Achraf Hakimi": 0.1,
+  "Azzedine Ounahi": 0.2,
+  "Gessime Yassine": 0.1,
+  "Ismael Saibari": 0.3,
+  "Issa Diop": 0.1
+ },
+ "Haiti": {
+  "Duke Lacroix": 0.5,
+  "Wilson Isidor": 0.5
+ },
+ "Scotland": {
+  "John McGinn": 1.0
+ },
+ "T\u00fcrkiye": {
+  "Kaan Ayhan": 0.3333,
+  "Arda G\u00fcler": 0.3333,
+  "Bar\u0131\u015f Alper Y\u0131lmaz": 0.3333
+ },
+ "United States": {
+  "Alex Freeman": 0.1111,
+  "Sebastian Berhalter": 0.1111,
+  "Folarin Balogun": 0.3333,
+  "Malik Tillman": 0.2222,
+  "Giovanni Reyna": 0.1111,
+  "Auston Trusty": 0.1111
+ },
+ "Paraguay": {
+  "Julio Enciso": 0.3333,
+  "Mat\u00edas Galarza Fonda": 0.3333,
+  "Mauricio": 0.3333
+ },
+ "Australia": {
+  "Nestory Irankunda": 0.5,
+  "Connor Metcalfe": 0.5
+ },
+ "Germany": {
+  "Felix Nmecha": 0.0667,
+  "Leroy San\u00e9": 0.0667,
+  "Nick Woltemade": 0.2667,
+  "Kai Havertz": 0.1333,
+  "Nathaniel Brown": 0.0667,
+  "Jamal Musiala": 0.0667,
+  "Deniz Undav": 0.2,
+  "Nico Schlotterbeck": 0.0667,
+  "Assan Ou\u00e9draogo": 0.0667
+ },
+ "Curacao": {
+  "Livano Comenencia": 0.3333,
+  "Kevin Felida": 0.3333,
+  "Ar'jany Martha": 0.3333
+ },
+ "C\u00f4te d'Ivoire": {
+  "Nicolas P\u00e9p\u00e9": 0.4,
+  "Franck Kessi\u00e9": 0.2,
+  "Amad Diallo": 0.4
+ },
+ "Ecuador": {
+  "Gonzalo Plata": 0.5,
+  "Nilson Angulo": 0.5
+ },
+ "Sweden": {
+  "Mattias Svanberg": 0.1429,
+  "Alexander Isak": 0.1429,
+  "Anthony Elanga": 0.2857,
+  "Viktor Gy\u00f6keres": 0.1429,
+  "Yasin Ayari": 0.2857
+ },
+ "Netherlands": {
+  "Brian Brobbey": 0.3333,
+  "Crysencio Summerville": 0.2222,
+  "Virgil van Dijk\u00a0": 0.1111,
+  "Cody Gakpo": 0.2222,
+  "Jan Paul van Hecke": 0.1111
+ },
+ "Japan": {
+  "Kaishu Sano": 0.125,
+  "Keito Nakamura": 0.125,
+  "Junya Ito": 0.125,
+  "Ayase Ueda": 0.25,
+  "Daizen Maeda": 0.125,
+  "Daichi Kamada": 0.25
+ },
+ "Tunisia": {
+  "Hazem Mastouri": 0.5,
+  "Omar Rekik": 0.5
+ },
+ "Belgium": {
+  "Charles De Ketelaere": 0.2308,
+  "Romelu Lukaku": 0.2308,
+  "Youri Tielemans": 0.1538,
+  "Alexis Saelemaekers": 0.0769,
+  "Kevin De Bruyne": 0.0769,
+  "Hans Vanaken": 0.0769,
+  "Leandro Trossard": 0.1538
+ },
+ "Egypt": {
+  "Yasser Ibrahim": 0.125,
+  "Mahmoud Trezeguet": 0.125,
+  "Mohamed Salah": 0.125,
+  "Emam Ashour": 0.25,
+  "Mahmoud Saber": 0.125,
+  "Mostafa Mohamed Zaki Abdelraouf": 0.25
+ },
+ "Iran": {
+  "Mohammad Mohebi": 0.3333,
+  "Ramin Rezaeian": 0.6667
+ },
+ "New Zealand": {
+  "Elijah Just": 0.375,
+  "Ben Waine": 0.25,
+  "Kosta Barbarouses": 0.25,
+  "Finn Surman": 0.125
+ },
+ "Spain": {
+  "Pedro Porro": 0.1538,
+  "Mart\u00edn Zubimendi": 0.0769,
+  "Mikel Merino": 0.1538,
+  "Fabi\u00e1n Ruiz": 0.0769,
+  "\u00c1lex Baena": 0.0769,
+  "Lamine Yamal": 0.0769,
+  "Mikel Oyarzabal": 0.3846
+ },
+ "Cape Verde Islands": {
+  "H\u00e9lio Varela": 0.2,
+  "Stopira": 0.2,
+  "Kevin Lenini": 0.2,
+  "Deroy Duarte": 0.2,
+  "Sidny Lopes Cabral": 0.2
+ },
+ "Saudi Arabia": {
+  "Abdulelah Al-Amri": 0.1429,
+  "Hassan Kadesh": 0.2857,
+  "Saleh Al-Shehri": 0.5714
+ },
+ "Uruguay": {
+  "Agust\u00edn Canobbio": 0.1667,
+  "Ronald Araujo": 0.1667,
+  "Maxi Ara\u00fajo": 0.3333,
+  "Giorgian de Arrascaeta": 0.3333
+ },
+ "Iraq": {
+  "Ali Al-Hamadi": 0.5,
+  "Aymen Hussein": 0.5
+ },
+ "France": {
+  "Bradley Barcola": 0.15,
+  "D\u00e9sir\u00e9 Dou\u00e9": 0.05,
+  "Ousmane Demb\u00e9l\u00e9": 0.3,
+  "Kylian Mbapp\u00e9": 0.5
+ },
+ "Senegal": {
+  "Iliman Ndiaye": 0.0909,
+  "Ibrahim Mbaye": 0.0909,
+  "Pape Gueye": 0.1818,
+  "Habib Diarra": 0.1818,
+  "Isma\u00efla Sarr": 0.3636,
+  "Cherif Ndiaye": 0.0909
+ },
+ "Norway": {
+  "Leo \u00d8stig\u00e5rd": 0.0833,
+  "Thelo Aasgaard": 0.0833,
+  "Andreas Schjelderup": 0.0833,
+  "Erling Haaland": 0.5833,
+  "Antonio Nusa": 0.0833,
+  "Marcus Pedersen": 0.0833
+ },
+ "Argentina": {
+  "Juli\u00e1n \u00c1lvarez": 0.0556,
+  "Enzo Fern\u00e1ndez": 0.1111,
+  "Lionel Messi\u00a0": 0.4444,
+  "Cristian Romero\u00a0": 0.0556,
+  "Alexis Mac Allister": 0.0556,
+  "Lautaro Mart\u00ednez": 0.1667,
+  "Lisandro Mart\u00ednez": 0.0556,
+  "Giovani Lo Celso": 0.0556
+ },
+ "Algeria": {
+  "Nadhir Benbouali": 0.3333,
+  "Amine Gouiri": 0.3333,
+  "Rafik Belghali": 0.3333
+ },
+ "Austria": {
+  "Sasa Kalajdzic": 0.1667,
+  "Marcel Sabitzer": 0.1667,
+  "Marko Arnautovic": 0.3333,
+  "Romano Schmid": 0.1667,
+  "Dejan Ljubicic": 0.1667
+ },
+ "Jordan": {
+  "Ibrahim Saadeh": 0.25,
+  "Ali Olwan": 0.25,
+  "Mousa Tamari": 0.25,
+  "Nizar Al-Rashdan": 0.25
+ },
+ "Congo DR": {
+  "Axel Tuanzebe": 0.5,
+  "Fiston Mayele": 0.5
+ },
+ "Portugal": {
+  "Cristiano Ronaldo": 0.4286,
+  "Rafael Le\u00e3o": 0.1429,
+  "Gon\u00e7alo Ramos": 0.1429,
+  "Nuno Mendes\u00a0": 0.1429,
+  "Jo\u00e3o Neves": 0.1429
+ },
+ "Uzbekistan": {
+  "Eldor Shomurodov": 0.5,
+  "Abbosbek Fayzullaev": 0.5
+ },
+ "Colombia": {
+  "Yerry Mina": 0.1667,
+  "J\u00e1minton Campaz": 0.1667,
+  "Luis D\u00edaz": 0.1667,
+  "Daniel Mu\u00f1oz": 0.3333,
+  "Jhon Arias": 0.1667
+ },
+ "England": {
+  "Anthony Gordon": 0.05,
+  "Bukayo Saka": 0.15,
+  "Harry Kane\u00a0": 0.3,
+  "Ezri Konsa": 0.05,
+  "Declan Rice": 0.05,
+  "Marcus Rashford": 0.05,
+  "Jude Bellingham": 0.35
+ },
+ "Croatia": {
+  "Martin Erli\u0107": 0.1,
+  "Kristijan Jakic": 0.2,
+  "Petar Su\u010di\u0107": 0.1,
+  "Martin Baturina": 0.1,
+  "Nikola Vla\u0161i\u0107": 0.1,
+  "Toni Fruk": 0.1,
+  "Ivan Peri\u0161i\u0107": 0.1,
+  "Petar Musa": 0.1,
+  "Ante Budimir": 0.1
+ },
+ "Ghana": {
+  "Caleb Yirenkyi": 0.5,
+  "Derrick Luckassen": 0.5
+ },
+ "Panama": {
+  "C\u00e9sar Yanis": 1.0
+ },
+ "Mexico": {
+  "Mateo Ch\u00e1vez": 0.1,
+  "Juli\u00e1n Qui\u00f1ones": 0.4,
+  "Ra\u00fal Jim\u00e9nez": 0.3,
+  "Luis Romo": 0.1,
+  "\u00c1lvaro Fidalgo": 0.1
+ }
+}

@@ -8,12 +8,15 @@ __pycache__/
 # Secrets — never commit
 kalshi_private_key.txt
 
-# API cache — large and ephemeral
+# API cache — large, and the closest thing to the raw SportMonks feed (kept out)
 data/cache.db
 data/bets.db
 
-# Derived data files (large, regenerated at runtime)
-data/*.json
+# Raw historical results dump (leans toward raw-feed redistribution; large)
+data/intl_results.csv
+
+# Our derived analysis (ratings, lessons, goal shares) IS published — see
+# the "Data & licensing" note in the README. Only raw feed data stays out.
 
 # Personal notes
 NOTES.md

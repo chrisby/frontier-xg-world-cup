@@ -1,0 +1,208 @@
+[
+ {
+  "game": "bosnia|canada",
+  "score": "Canada 1-1 Bosnia and Herzegovina",
+  "ts": "2026-06-19T04:18:21.944802+00:00",
+  "bets": [
+   {
+    "bet_id": 1,
+    "market": "NO: Canada over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 13.2
+   },
+   {
+    "bet_id": 2,
+    "market": "NO: Canada -1.5 (win by 2+)",
+    "outcome": "won",
+    "pnl": 7.83
+   }
+  ],
+  "lesson": "Confirmed: when a favored host is missing its main transition/creation threat and fields a rotated or lightly capped XI, downgrade both its scoring ceiling and blowout probability. Team-goal unders and anti-handicap positions can be the same core edge when the market overprices reputation/home status."
+ },
+ {
+  "game": "qatar|switzerland",
+  "score": "Qatar 1-1 Switzerland",
+  "ts": "2026-06-19T04:18:57.889818+00:00",
+  "bets": [
+   {
+    "bet_id": 6,
+    "market": "NO: Switzerland over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 58.5
+   },
+   {
+    "bet_id": 7,
+    "market": "NO: Qatar-Switzerland over 2.5 goals",
+    "outcome": "won",
+    "pnl": 23.4
+   },
+   {
+    "bet_id": 8,
+    "market": "NO: Qatar-Switzerland over 3.5 goals",
+    "outcome": "won",
+    "pnl": 3.24
+   }
+  ],
+  "lesson": "Confirmed: If your model\u2019s strongest edges align on the same low-scoring thesis\u2014opposing a team\u2019s 2+ goals and opposing game overs\u2014it\u2019s reasonable to trust the under stack when the market is pricing too much scoring. Just remember these positions are highly correlated."
+ },
+ {
+  "game": "haiti|scotland",
+  "score": "Haiti 0-1 Scotland",
+  "ts": "2026-06-19T04:19:24.742829+00:00",
+  "bets": [
+   {
+    "bet_id": 9,
+    "market": "NO: Scotland over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 24.18
+   },
+   {
+    "bet_id": 10,
+    "market": "NO: Haiti-Scotland over 2.5 goals",
+    "outcome": "won",
+    "pnl": 18.56
+   },
+   {
+    "bet_id": 11,
+    "market": "NO: Haiti-Scotland over 3.5 goals",
+    "outcome": "won",
+    "pnl": 3.5
+   }
+  ],
+  "lesson": "Confirmed: A clear favorite does not automatically mean a high-scoring game. When the underdog offers limited attacking threat and the favorite can win through control rather than tempo, fading inflated team-total and full-game overs is a repeatable angle."
+ },
+ {
+  "game": "curacao|germany",
+  "score": "Germany 7-1 Curacao",
+  "ts": "2026-06-19T04:20:38.678052+00:00",
+  "bets": [
+   {
+    "bet_id": 13,
+    "market": "NO: Germany -1.5 (win by 2+)",
+    "outcome": "lost",
+    "pnl": -36.92
+   },
+   {
+    "bet_id": 14,
+    "market": "NO: Germany-Curacao over 3.5 goals",
+    "outcome": "lost",
+    "pnl": -24.84
+   }
+  ],
+  "lesson": "Watch out for underestimating blowout tail risk in extreme mismatches. Betting against both the big favorite\u2019s margin and the over is effectively the same exposure: if the favorite\u2019s pressure turns into an early goal or defensive collapse, both positions fail together."
+ },
+ {
+  "game": "cape verde|spain",
+  "score": "Spain 0-0 Cape Verde Islands",
+  "ts": "2026-06-19T04:21:15.828121+00:00",
+  "bets": [
+   {
+    "bet_id": 15,
+    "market": "NO: Spain -1.5 (win by 2+)",
+    "outcome": "won",
+    "pnl": 136.8
+   },
+   {
+    "bet_id": 16,
+    "market": "NO: Spain-Cape Verde Islands over 2.5 goals",
+    "outcome": "won",
+    "pnl": 60.06
+   },
+   {
+    "bet_id": 17,
+    "market": "NO: Spain over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 0.88
+   },
+   {
+    "bet_id": 18,
+    "market": "Spain-Cape Verde Islands draw",
+    "outcome": "won",
+    "pnl": 0.93
+   }
+  ],
+  "lesson": "Confirmed: when a dominant possession favorite is priced as if control guarantees goals, fading the scoring/margin tail can be right. Team-goal unders, match unders, anti-handicap, and small draw exposure are correlated value when conversion risk is underpriced."
+ },
+ {
+  "game": "saudi arabia|uruguay",
+  "score": "Saudi Arabia 1-1 Uruguay",
+  "ts": "2026-06-19T04:22:09.791448+00:00",
+  "bets": [
+   {
+    "bet_id": 19,
+    "market": "NO: Uruguay over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 16.8
+   }
+  ],
+  "lesson": "Confirmed: a team can be the deserved favorite without being a strong multi-goal favorite. When the favorite\u2019s XI/attacking setup looks below full strength and the matchup doesn\u2019t project as a runaway, fading team-goal overs can be good value even if they control more of the game."
+ },
+ {
+  "game": "iraq|norway",
+  "score": "Iraq 1-4 Norway",
+  "ts": "2026-06-19T04:22:42.868190+00:00",
+  "bets": [
+   {
+    "bet_id": 20,
+    "market": "NO: Norway over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -24.96
+   }
+  ],
+  "lesson": "Watch out for market-direction/settlement mismatches: a team-total over that clears the line should not be treated as a model loss. Before drawing tactical lessons, verify whether \u201cNO\u201d means Norway or \u201cNo,\u201d because mislabeled settlements create false negative signals."
+ },
+ {
+  "game": "algeria|argentina",
+  "score": "Argentina 3-0 Algeria",
+  "ts": "2026-06-19T04:23:19.301397+00:00",
+  "bets": [
+   {
+    "bet_id": 21,
+    "market": "NO: Argentina -1.5 (win by 2+)",
+    "outcome": "lost",
+    "pnl": -27.93
+   }
+  ],
+  "lesson": "Watch out for fading a strong favorite\u2019s multi-goal win when they have both midfield control and elite finishing options. \u201cNot overwhelming favorite\u201d isn\u2019t enough to oppose the handicap if the matchup still points to sustained pressure and a clear quality gap."
+ },
+ {
+  "game": "congo|portugal",
+  "score": "Portugal 1-1 Congo DR",
+  "ts": "2026-06-19T04:23:49.838535+00:00",
+  "bets": [
+   {
+    "bet_id": 22,
+    "market": "NO: Portugal over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 44.89
+   },
+   {
+    "bet_id": 23,
+    "market": "NO: Portugal -1.5 (win by 2+)",
+    "outcome": "won",
+    "pnl": 30.16
+   },
+   {
+    "bet_id": 24,
+    "market": "NO: Portugal-Congo DR over 2.5 goals",
+    "outcome": "won",
+    "pnl": 28.05
+   }
+  ],
+  "lesson": "Confirmed: If the favorite profile is more territorial control than clear chance creation, don\u2019t pay for 2+ goals, -1.5 covers, or match overs. Disciplined underdogs can cap the favorite\u2019s ceiling, making correlated NO bets valid when the market overprices name-strength."
+ },
+ {
+  "game": "australia|turkey",
+  "score": "Australia 2-0 T\u00fcrkiye",
+  "ts": "2026-06-19T04:25:43.306531+00:00",
+  "bets": [
+   {
+    "bet_id": 12,
+    "market": "NO: T\u00fcrkiye over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 8.84
+   }
+  ],
+  "lesson": "Confirmed: don\u2019t let squad-quality narratives alone justify a 2+ team-goal expectation. Team-total overs need sustained chance volume, matchup control, and finishing pathways; when the market prices reputation over creation, fading the scoring ceiling can be the value side."
+ }
+]

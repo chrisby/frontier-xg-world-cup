@@ -135,13 +135,16 @@ calibration turns negative over the settled sample. Every threshold lives in
 This is a personal research project, published for transparency — not a product,
 a tipping service, or financial advice.
 
-- **Bring your own keys.** We don't redistribute any data here. Running your own
-  copy needs your own **SportMonks** license (priced per domain), **Anthropic**
-  API key, and — to place real orders — **Kalshi** trading credentials. See
-  `.env.example`.
-- **Derived, not resold.** The dossiers, probabilities, and bets we publish are
-  *derivative work* built on SportMonks data, which their terms permit; we never
-  resell the raw feed. Any team logos or photos remain their owners'.
+- **What we publish vs. what we don't.** We *do* publish our derived analysis —
+  the reasoned ratings, per-match dossiers, lessons, and the full bet ledger
+  (`data/`). What we don't ship is the **raw SportMonks feed**: the API cache
+  (`data/cache.db`) and raw results dumps stay out. Under SportMonks' terms this
+  is the important line — building on their data and even distributing the result
+  is permitted; reselling the raw feed is not. Any team logos or photos remain
+  their owners'.
+- **Bring your own keys.** Running your own copy needs your own **SportMonks**
+  license (priced per domain), **Anthropic** API key, and — to place real orders —
+  **Kalshi** trading credentials. See `.env.example`.
 - **No warranty. Use at your own risk.** This code is provided "as is", with no
   guarantee of correctness, uptime, or profit — past results say nothing about
   the future. Sports betting carries a real risk of losing money. **We take no

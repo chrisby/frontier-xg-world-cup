@@ -1,0 +1,1038 @@
+[
+ {
+  "distilled_from": "lessons_archive_2026-06-18.json",
+  "ts": "2026-06-18",
+  "lesson": "Fade inflated scoring/margin (team-total overs, -1.5 handicaps, match overs) when a favorite projects as a CONTROL/territorial team rather than a clear chance-creator \u2014 i.e., possession dominance without elite finishing volume, a missing main creative/transition threat, a rotated or below-full-strength attacking XI, or a disciplined low-threat underdog that caps the ceiling. The market often overprices reputation and 'control guarantees goals.' This makes team-goal unders, match unders, anti-handicap, and small draw exposure correlated value."
+ },
+ {
+  "distilled_from": "lessons_archive_2026-06-18.json",
+  "ts": "2026-06-18",
+  "lesson": "Do NOT fade a strong favorite's multi-goal win when the matchup genuinely points to sustained pressure AND elite finishing \u2014 i.e., midfield control PLUS proven conversion options against a weak/overmatched opponent. 'Not an overwhelming favorite' or squad-quality skepticism alone is insufficient to oppose the handicap or over; respect blowout tail risk in extreme mismatches where early goals or defensive collapse cascade into large margins."
+ },
+ {
+  "distilled_from": "lessons_archive_2026-06-18.json",
+  "ts": "2026-06-18",
+  "lesson": "Recognize that anti-scoring positions (opposing 2+ team goals, opposing the handicap, opposing match overs) are HIGHLY CORRELATED \u2014 they win and lose together. When your strongest edges all align on a low-scoring thesis it is reasonable to trust the stack, but size it as one concentrated bet, not as independent diversified edges, because a single early goal or collapse fails all of them simultaneously."
+ },
+ {
+  "distilled_from": "lessons_archive_2026-06-18.json",
+  "ts": "2026-06-18",
+  "lesson": "Before drawing tactical or performance lessons from a result, verify settlement and label integrity: confirm which side 'NO'/'No' refers to and whether a line was actually cleared. A bet that beat its line is not a model loss; mislabeled or misattributed settlements create false negative signals that corrupt future reasoning."
+ },
+ {
+  "game": "colombia|uzbekistan",
+  "score": "Uzbekistan 1-3 Colombia",
+  "ts": "2026-06-19T04:44:10.115138+00:00",
+  "bets": [
+   {
+    "bet_id": 25,
+    "market": "NO: Colombia over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -25.35
+   }
+  ],
+  "lesson": "Watch out for betting \u201cNO\u201d on team over 1.5 goals when the edge is modest and the opponent may not suppress chance quality. A 53% position losing is normal variance, but future unders need stronger matchup/tempo support beyond price discrepancy."
+ },
+ {
+  "game": "bosnia|switzerland",
+  "score": "Switzerland 4-1 Bosnia and Herzegovina",
+  "ts": "2026-06-19T04:44:37.271233+00:00",
+  "bets": [
+   {
+    "bet_id": 26,
+    "market": "NO: Switzerland over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -19.74
+   }
+  ],
+  "lesson": "Watch out for taking \u201cNO\u201d on a favorite\u2019s 1.5 team-goals line when their XI is strong and they project to dominate territory/midfield. Price edge isn\u2019t enough; require clear evidence of low tempo or defensive resilience before fading 2+ goals."
+ },
+ {
+  "game": "canada|qatar",
+  "score": "Canada 6-0 Qatar",
+  "ts": "2026-06-19T04:45:01.841824+00:00",
+  "bets": [
+   {
+    "bet_id": 27,
+    "market": "NO: Canada over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -34.32
+   },
+   {
+    "bet_id": 28,
+    "market": "NO: Canada -1.5 (win by 2+)",
+    "outcome": "lost",
+    "pnl": -23.04
+   },
+   {
+    "bet_id": 29,
+    "market": "NO: Canada-Qatar over 1.5 goals",
+    "outcome": "lost",
+    "pnl": -0.23
+   }
+  ],
+  "lesson": "Watch out for translating a favorite\u2019s territorial/control edge and opponent attacking absences into unders or \u201cNO\u201d on favorite scoring/handicap markets. When the mismatch points to one-way pressure, blowout risk can dominate even if the weaker side offers little going forward."
+ },
+ {
+  "game": "brazil|haiti",
+  "score": "Brazil 3-0 Haiti",
+  "ts": "2026-06-20T02:42:29.825413+00:00",
+  "bets": [
+   {
+    "bet_id": 30,
+    "market": "NO: Brazil-Haiti over 3.5 goals",
+    "outcome": "won",
+    "pnl": 47.24
+   },
+   {
+    "bet_id": 31,
+    "market": "NO: Brazil -1.5 (win by 2+)",
+    "outcome": "lost",
+    "pnl": -31.22
+   },
+   {
+    "bet_id": 32,
+    "market": "NO: Brazil over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -0.18
+   }
+  ],
+  "lesson": "Watch out for fading a heavy favorite's scoring against weak opposition: betting NO on dominant teams covering handicaps or hitting goal totals invites losses when expected blowouts materialize. Reserve under/NO-goals bets for the total ceiling, not the favorite's margin or team-goal floor."
+ },
+ {
+  "game": "germany|ivory coast",
+  "score": null,
+  "ts": "2026-06-20T22:08:46.002822+00:00",
+  "bets": [
+   {
+    "bet_id": 33,
+    "market": "NO: Germany-C\u00f4te d'Ivoire over 2.5 goals",
+    "outcome": "lost",
+    "pnl": -22.92
+   },
+   {
+    "bet_id": 34,
+    "market": "NO: Germany-C\u00f4te d'Ivoire over 3.5 goals",
+    "outcome": "won",
+    "pnl": 18.04
+   },
+   {
+    "bet_id": 35,
+    "market": "NO: Germany over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -9.27
+   }
+  ],
+  "lesson": "Watch out for fading goals when backing a strong attacking favorite: betting \"under/no\" on totals against a team with high shot volume and chance creation invites blow-ups. When your own analysis cites sustained pressure, don't lean on low-scoring outcomes."
+ },
+ {
+  "game": "curacao|ecuador",
+  "score": "Ecuador 0-0 Curacao",
+  "ts": "2026-06-21T04:55:13.659925+00:00",
+  "bets": [
+   {
+    "bet_id": 36,
+    "market": "NO: Ecuador over 2.5 team goals",
+    "outcome": "won",
+    "pnl": 50.6
+   },
+   {
+    "bet_id": 37,
+    "market": "NO: Ecuador over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 36.88
+   },
+   {
+    "bet_id": 38,
+    "market": "NO: Ecuador to beat Curacao",
+    "outcome": "won",
+    "pnl": 0.86
+   },
+   {
+    "bet_id": 39,
+    "market": "NO: Ecuador over 0.5 team goals",
+    "outcome": "won",
+    "pnl": 0.94
+   }
+  ],
+  "lesson": "Confirmed: Fading an inflated favourite's goal-scoring expectations pays off when the market overprices their attacking output\u2014strong defensive sides and tactical underdogs can stifle even clear favourites. Backing the \"under/no\" on overhyped scorelines captures value across multiple goal lines simultaneously."
+ },
+ {
+  "game": "saudi arabia|spain",
+  "score": null,
+  "ts": "2026-06-21T17:46:46.048453+00:00",
+  "bets": [
+   {
+    "bet_id": 40,
+    "market": "NO: Spain over 2.5 team goals",
+    "outcome": "lost",
+    "pnl": -73.86
+   },
+   {
+    "bet_id": 41,
+    "market": "NO: Spain over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -18.67
+   },
+   {
+    "bet_id": 42,
+    "market": "NO: Spain-Saudi Arabia over 1.5 goals",
+    "outcome": "lost",
+    "pnl": -0.15
+   }
+  ],
+  "lesson": "Watch out for fading goal totals when a dominant favourite faces a heavy underdog. Backing \"unders\" against elite attacking sides invites blowout risk; their territorial and technical superiority often converts into multiple goals, so don't overweight the chance of a low-scoring game."
+ },
+ {
+  "game": "cape verde|uruguay",
+  "score": "Uruguay 2-2 Cape Verde Islands",
+  "ts": "2026-06-22T00:12:38.837718+00:00",
+  "bets": [
+   {
+    "bet_id": 43,
+    "market": "NO: Uruguay over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -24.82
+   }
+  ],
+  "lesson": "Don't overweight a model's edge on team-total unders for stronger sides; quality favorites with high shot volume frequently exceed 1.5 goals, so betting against their scoring requires a larger margin than a thin 10% gap."
+ },
+ {
+  "game": "egypt|new zealand",
+  "score": "New Zealand 1-3 Egypt",
+  "ts": "2026-06-23T23:11:42.221417+00:00",
+  "bets": [
+   {
+    "bet_id": 44,
+    "market": "NO: Egypt over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -23.88
+   }
+  ],
+  "lesson": "Watch out for backing UNDER on team goals when you already rate that team a clear favorite with superior attacking quality\u2014a 57% model edge against your own thesis is a red flag. If you believe a side creates the better chances, lean toward their goals OVER, not under."
+ },
+ {
+  "game": "argentina|austria",
+  "score": "Argentina 2-0 Austria",
+  "ts": "2026-06-23T23:11:45.531019+00:00",
+  "bets": [
+   {
+    "bet_id": 45,
+    "market": "NO: Argentina over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -19.23
+   }
+  ],
+  "lesson": "Watch out for fading a clear favourite's team-goal total when your own model only marginally supports the bet (52%). Backing the under on elite attacking sides at neutral venues offers thin edge and high variance\u2014demand stronger conviction before betting against quality offenses."
+ },
+ {
+  "game": "france|iraq",
+  "score": "France 3-0 Iraq",
+  "ts": "2026-06-23T23:11:48.309538+00:00",
+  "bets": [
+   {
+    "bet_id": 47,
+    "market": "NO: France over 3.5 team goals",
+    "outcome": "won",
+    "pnl": 14.56
+   }
+  ],
+  "lesson": "Confirmed: In clear mismatches, fading inflated team-goal totals (e.g., over 3.5) pays off\u2014dominant favorites often win comfortably without running up extreme scorelines, so the market overprices high-goal thresholds."
+ },
+ {
+  "game": "portugal|uzbekistan",
+  "score": "Portugal 5-0 Uzbekistan",
+  "ts": "2026-06-23T23:11:51.241816+00:00",
+  "bets": [
+   {
+    "bet_id": 48,
+    "market": "NO: Portugal over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -26.05
+   },
+   {
+    "bet_id": 49,
+    "market": "NO: Portugal over 2.5 team goals",
+    "outcome": "lost",
+    "pnl": -37.62
+   }
+  ],
+  "lesson": "Watch out for fading a strong favorite's goal output against weak opposition; betting NO on team-goal overlines underestimates how lopsided talent mismatches can blow out. When a top side faces clearly inferior defenses, lean toward overs, not unders."
+ },
+ {
+  "game": "england|ghana",
+  "score": "England 0-0 Ghana",
+  "ts": "2026-06-23T23:11:54.615903+00:00",
+  "bets": [
+   {
+    "bet_id": 50,
+    "market": "NO: England over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 45.18
+   },
+   {
+    "bet_id": 51,
+    "market": "NO: England over 2.5 team goals",
+    "outcome": "won",
+    "pnl": 22.5
+   },
+   {
+    "bet_id": 52,
+    "market": "NO: England-Ghana over 2.5 goals",
+    "outcome": "won",
+    "pnl": 6.88
+   }
+  ],
+  "lesson": "Confirmed: When the market overprices a favorite's scoring ceiling, fading inflated over/goal lines (backing the \"NO\") captures real value. Strong-but-not-overwhelming favorites on neutral fields often underdeliver on goals, so don't assume attacking talent automatically translates to high scorelines."
+ },
+ {
+  "game": "colombia|congo",
+  "score": "Colombia 1-0 Congo DR",
+  "ts": "2026-06-24T04:08:58.676649+00:00",
+  "bets": [
+   {
+    "bet_id": 53,
+    "market": "NO: Colombia over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 24.6
+   }
+  ],
+  "lesson": "Confirmed: backing under team-goal lines for a favorite that's strong but not dominant\u2014especially on neutral ground with key creators benched\u2014can hold value when the model edge (57% vs 47%) is genuine. Low-scoring outputs from quality-but-not-clinical teams reward fading inflated overs."
+ },
+ {
+  "game": "bosnia|qatar",
+  "score": null,
+  "ts": "2026-06-24T23:32:54.087439+00:00",
+  "bets": [
+   {
+    "bet_id": 54,
+    "market": "NO: Bosnia and Herzegovina-Qatar over 2.5 goals",
+    "outcome": "lost",
+    "pnl": -30.5
+   },
+   {
+    "bet_id": 55,
+    "market": "NO: Bosnia and Herzegovina over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -25.97
+   },
+   {
+    "bet_id": 56,
+    "market": "NO: Bosnia and Herzegovina-Qatar over 3.5 goals",
+    "outcome": "lost",
+    "pnl": -10.82
+   },
+   {
+    "bet_id": 57,
+    "market": "NO: Bosnia and Herzegovina-Qatar over 1.5 goals",
+    "outcome": "lost",
+    "pnl": -0.38
+   }
+  ],
+  "lesson": "Watch out for stacking multiple correlated \"under/NO over\" bets on the same match\u2014they all fail together when a high-scoring game hits. The model systematically overestimated low-scoring outcomes against the market; don't fade goals just because one side looks the clearer favourite in a friendly/neutral fixture."
+ },
+ {
+  "game": "brazil|scotland",
+  "score": null,
+  "ts": "2026-06-25T00:14:05.726861+00:00",
+  "bets": [
+   {
+    "bet_id": 58,
+    "market": "NO: Scotland-Brazil over 2.5 goals",
+    "outcome": "lost",
+    "pnl": -24.36
+   },
+   {
+    "bet_id": 59,
+    "market": "NO: Brazil over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -19.82
+   },
+   {
+    "bet_id": 60,
+    "market": "NO: Scotland-Brazil over 3.5 goals",
+    "outcome": "won",
+    "pnl": 4.68
+   },
+   {
+    "bet_id": 61,
+    "market": "NO: Scotland-Brazil over 1.5 goals",
+    "outcome": "lost",
+    "pnl": -0.26
+   }
+  ],
+  "lesson": "Don't fade overs against a dominant favorite when the market prices high scoring\u2014the model repeatedly underestimated goal totals by betting NO on overs. When a strong attacking team faces a weaker side, lean toward goals, not against them."
+ },
+ {
+  "game": "haiti|morocco",
+  "score": null,
+  "ts": "2026-06-25T00:14:09.085103+00:00",
+  "bets": [
+   {
+    "bet_id": 62,
+    "market": "NO: Morocco over 2.5 team goals",
+    "outcome": "lost",
+    "pnl": -37.98
+   },
+   {
+    "bet_id": 63,
+    "market": "NO: Morocco-Haiti over 2.5 goals",
+    "outcome": "lost",
+    "pnl": -9.76
+   },
+   {
+    "bet_id": 64,
+    "market": "NO: Morocco over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -0.27
+   }
+  ],
+  "lesson": "Watch out for systematically underestimating a strong favourite's scoring against a weak opponent. Betting \"under\" on goal totals (NO over X) failed across the board when the model overweighted competitiveness vs elite sides while ignoring blowout potential against minnows. Don't fade a clear favourite's goal output based on their performance against top teams."
+ },
+ {
+  "game": "korea|south africa",
+  "score": "South Africa 1-0 Korea Republic",
+  "ts": "2026-06-25T14:15:32.954161+00:00",
+  "bets": [
+   {
+    "bet_id": 65,
+    "market": "NO: Korea Republic over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 14.57
+   }
+  ],
+  "lesson": "Confirmed: When the model identifies a genuine edge over market price on a team-total under, backing it pays off\u2014especially against favorites who can dominate possession yet fail to convert into multiple goals. Don't assume control equals goal volume."
+ },
+ {
+  "game": "ecuador|germany",
+  "score": "Ecuador 2-1 Germany",
+  "ts": "2026-06-25T22:08:23.848501+00:00",
+  "bets": [
+   {
+    "bet_id": 70,
+    "market": "NO: Ecuador-Germany over 2.5 goals",
+    "outcome": "lost",
+    "pnl": -20.09
+   },
+   {
+    "bet_id": 71,
+    "market": "NO: Ecuador-Germany over 3.5 goals",
+    "outcome": "won",
+    "pnl": 8.18
+   }
+  ],
+  "lesson": "Watch out for goal-total cutoffs near the actual scoreline: backing \"under 2.5\" lost while \"under 3.5\" won on a 3-goal game. When a match lands exactly on your threshold, small edges in model probability offer little real protection\u2014favor under bets only when the cushion above expected goals is comfortable."
+ },
+ {
+  "game": "curacao|ivory coast",
+  "score": "Curacao 0-2 C\u00f4te d'Ivoire",
+  "ts": "2026-06-26T04:39:18.248778+00:00",
+  "bets": [
+   {
+    "bet_id": 66,
+    "market": "NO: C\u00f4te d'Ivoire over 2.5 team goals",
+    "outcome": "won",
+    "pnl": 23.15
+   },
+   {
+    "bet_id": 67,
+    "market": "NO: C\u00f4te d'Ivoire to beat Curacao",
+    "outcome": "lost",
+    "pnl": -14.03
+   },
+   {
+    "bet_id": 68,
+    "market": "NO: Curacao-C\u00f4te d'Ivoire over 2.5 goals",
+    "outcome": "won",
+    "pnl": 12.89
+   },
+   {
+    "bet_id": 69,
+    "market": "Curacao-C\u00f4te d'Ivoire draw",
+    "outcome": "lost",
+    "pnl": -0.12
+   }
+  ],
+  "lesson": "Don't overweight an underdog's draw or upset chances against a clearly superior side; fading the favorite's win when they're a genuine tier above repeatedly loses. Backing under/totals (low-scoring) held, but betting against the stronger team simply winning is a recurring trap."
+ },
+ {
+  "game": "turkey|usa",
+  "score": "T\u00fcrkiye 3-2 United States",
+  "ts": "2026-06-26T04:39:21.302519+00:00",
+  "bets": [
+   {
+    "bet_id": 73,
+    "market": "NO: United States over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -12.42
+   }
+  ],
+  "lesson": "Watch out for backing \"under team goals\" on attacking sides fielding weakened XIs\u2014even depleted lineups can convert against vulnerable defenses. A modest model edge over market (61% vs 50%) doesn't justify confidence when you're betting against a team's proven scoring upside."
+ },
+ {
+  "game": "netherlands|tunisia",
+  "score": "Tunisia 1-3 Netherlands",
+  "ts": "2026-06-26T04:39:24.170805+00:00",
+  "bets": [
+   {
+    "bet_id": 74,
+    "market": "Tunisia-Netherlands both teams score",
+    "outcome": "won",
+    "pnl": 28.14
+   },
+   {
+    "bet_id": 75,
+    "market": "Tunisia over 0.5 team goals",
+    "outcome": "won",
+    "pnl": 26.0
+   }
+  ],
+  "lesson": "Confirmed: When the model finds a large edge on an underdog scoring (BTTS/team over 0.5), back it\u2014even dominant favorites concede, and markets often over-discount a weaker side's ability to find one goal."
+ },
+ {
+  "game": "spain|uruguay",
+  "score": "Uruguay 0-1 Spain",
+  "ts": "2026-06-27T15:19:43.111522+00:00",
+  "bets": [
+   {
+    "bet_id": 76,
+    "market": "NO: Spain over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 14.64
+   }
+  ],
+  "lesson": "Confirmed: Backing UNDER a strong favorite's team-goal total can offer value, since dominant sides often win by a single goal despite controlling play\u2014class doesn't guarantee multiple goals. Favoring quality over scoring volume when the market overprices a blowout is sound."
+ },
+ {
+  "game": "belgium|new zealand",
+  "score": "New Zealand 1-5 Belgium",
+  "ts": "2026-06-27T15:19:45.653295+00:00",
+  "bets": [
+   {
+    "bet_id": 78,
+    "market": "New Zealand over 0.5 team goals",
+    "outcome": "won",
+    "pnl": 10.65
+   },
+   {
+    "bet_id": 79,
+    "market": "New Zealand-Belgium both teams score",
+    "outcome": "won",
+    "pnl": 10.5
+   }
+  ],
+  "lesson": "Confirmed: Even heavy underdogs facing dominant favorites often manage at least one goal, so backing the weaker side to score (BTTS or team over 0.5) holds value when the market overprices a clean sheet. Talent gaps drive scorelines, not shutouts."
+ },
+ {
+  "game": "egypt|iran",
+  "score": "Egypt 1-1 Iran",
+  "ts": "2026-06-27T15:19:48.557658+00:00",
+  "bets": [
+   {
+    "bet_id": 80,
+    "market": "Egypt-Iran over 2.5 goals",
+    "outcome": "lost",
+    "pnl": -7.68
+   }
+  ],
+  "lesson": "Watch out for backing overs in evenly-matched, defensively resilient mid-tier matchups; tight, cagey games often settle low-scoring (here 1-1). An individual-talent \"ceiling\" argument doesn't override the base rate when both sides prioritize resilience."
+ },
+ {
+  "game": "colombia|portugal",
+  "score": "Colombia 0-0 Portugal",
+  "ts": "2026-06-28T04:45:35.934848+00:00",
+  "bets": [
+   {
+    "bet_id": 81,
+    "market": "NO: Portugal over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 15.39
+   }
+  ],
+  "lesson": "Confirmed: In tight matchups between two strong, full-strength sides, backing a team to stay UNDER its goal line offers value\u2014elite defenses and cagey play suppress scoring, so favor unders when quality is balanced and motivation high."
+ },
+ {
+  "game": "congo|uzbekistan",
+  "score": "Congo DR 3-1 Uzbekistan",
+  "ts": "2026-06-28T04:45:39.181254+00:00",
+  "bets": [
+   {
+    "bet_id": 82,
+    "market": "NO: Congo DR over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -25.88
+   }
+  ],
+  "lesson": "Watch out for backing UNDER on a team's goals in must-win knockout scenarios; defensive resilience often gives way to attacking urgency, and a model edge over a coin-flip market price isn't enough margin to justify fading a motivated favorite's scoring."
+ },
+ {
+  "game": "argentina|jordan",
+  "score": "Jordan 1-3 Argentina",
+  "ts": "2026-06-28T04:45:42.050259+00:00",
+  "bets": [
+   {
+    "bet_id": 83,
+    "market": "Jordan-Argentina over 3.5 goals",
+    "outcome": "won",
+    "pnl": 36.03
+   },
+   {
+    "bet_id": 85,
+    "market": "Argentina over 2.5 team goals",
+    "outcome": "won",
+    "pnl": 7.36
+   }
+  ],
+  "lesson": "Confirmed: When an elite, deep squad faces a clear minnow, backing goal-scoring overs at prices below model probability pays off\u2014class gaps in attacking output are persistently underpriced by markets."
+ },
+ {
+  "game": "algeria|austria",
+  "score": "Algeria 3-3 Austria",
+  "ts": "2026-06-28T04:45:44.696852+00:00",
+  "bets": [
+   {
+    "bet_id": 86,
+    "market": "Algeria over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 63.89
+   },
+   {
+    "bet_id": 87,
+    "market": "Algeria-Austria over 2.5 goals",
+    "outcome": "won",
+    "pnl": 43.82
+   },
+   {
+    "bet_id": 88,
+    "market": "Algeria-Austria over 1.5 goals",
+    "outcome": "won",
+    "pnl": 11.56
+   },
+   {
+    "bet_id": 89,
+    "market": "Algeria-Austria over 3.5 goals",
+    "outcome": "won",
+    "pnl": 1.7
+   }
+  ],
+  "lesson": "Confirmed: When two evenly-matched, high-volume attacking sides meet and the market underprices goals, backing overs across multiple thresholds pays off. Trust shot-volume signals to identify systematically underpriced over markets."
+ },
+ {
+  "game": "brazil|japan",
+  "score": "Brazil 2-1 Japan",
+  "ts": "2026-06-29T19:09:40.362466+00:00",
+  "bets": [
+   {
+    "bet_id": 90,
+    "market": "Brazil-Japan over 2.5 goals",
+    "outcome": "won",
+    "pnl": 31.36
+   },
+   {
+    "bet_id": 91,
+    "market": "Brazil-Japan over 3.5 goals",
+    "outcome": "lost",
+    "pnl": -20.22
+   },
+   {
+    "bet_id": 92,
+    "market": "Brazil-Japan over 1.5 goals",
+    "outcome": "won",
+    "pnl": 15.16
+   }
+  ],
+  "lesson": "Confirmed: When a talent-laden favorite shows high shot volume, backing modest over lines (1.5, 2.5) with positive edge pays off\u2014but don't stretch the same thesis to higher lines (3.5+), where goal totals rarely climb that far. Scale exposure down as the line rises."
+ },
+ {
+  "game": "germany|paraguay",
+  "score": null,
+  "ts": "2026-06-30T00:05:20.182540+00:00",
+  "bets": [
+   {
+    "bet_id": 93,
+    "market": "NO: Germany over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 47.68
+   },
+   {
+    "bet_id": 94,
+    "market": "NO: Germany over 2.5 team goals",
+    "outcome": "won",
+    "pnl": 20.87
+   },
+   {
+    "bet_id": 95,
+    "market": "Paraguay advances (incl. ET/pens)",
+    "outcome": "won",
+    "pnl": 58.88
+   }
+  ],
+  "lesson": "Confirmed: Backing the under on a heavy favorite's team goals\u2014and value on a disciplined underdog advancing\u2014pays off when the favorite faces a low-block defense that suppresses clear chances. Fade inflated scoreline expectations when one side concedes possession but limits quality shots."
+ },
+ {
+  "game": "ivory coast|norway",
+  "score": "C\u00f4te d'Ivoire 1-2 Norway",
+  "ts": "2026-06-30T19:29:55.576626+00:00",
+  "bets": [
+   {
+    "bet_id": 96,
+    "market": "Ivory Coast advances (incl. ET/pens)",
+    "outcome": "lost",
+    "pnl": -16.55
+   }
+  ],
+  "lesson": "Watch out for backing a \"value\" underdog purely on perceived evenness when the opponent has clearly superior attacking talent; concentrated individual quality (a top striker plus creators) often decides tight knockout matches. Don't overrate model edges that contradict your own read on firepower."
+ },
+ {
+  "game": "france|sweden",
+  "score": null,
+  "ts": "2026-06-30T23:22:17.452311+00:00",
+  "bets": [
+   {
+    "bet_id": 97,
+    "market": "Sweden advances (incl. ET/pens)",
+    "outcome": "lost",
+    "pnl": -14.37
+   }
+  ],
+  "lesson": "Watch out for backing big underdogs purely on a model-vs-market edge: when an elite, full-strength favorite faces a clear gap in quality, the market's low price often reflects reality. A perceived 9% edge isn't worth chasing if the core thesis still has the favorite winning comfortably."
+ },
+ {
+  "game": "ecuador|mexico",
+  "score": null,
+  "ts": "2026-07-01T04:29:37.004847+00:00",
+  "bets": [
+   {
+    "bet_id": 98,
+    "market": "Ecuador advances (incl. ET/pens)",
+    "outcome": "lost",
+    "pnl": -33.31
+   }
+  ],
+  "lesson": "Watch out for overriding market prices with large model edges in cagey knockout matches; a 12-point gap on a coin-flip advancement bet often reflects information you're missing, not value. Don't discount an opponent's strong form just because their clean sheets came against \"modest\" attacks."
+ },
+ {
+  "game": "congo|england",
+  "score": null,
+  "ts": "2026-07-01T18:10:43.546587+00:00",
+  "bets": [
+   {
+    "bet_id": 99,
+    "market": "Congo DR over 0.5 team goals",
+    "outcome": "won",
+    "pnl": 51.32
+   },
+   {
+    "bet_id": 100,
+    "market": "England-Congo DR both teams score",
+    "outcome": "won",
+    "pnl": 42.42
+   }
+  ],
+  "lesson": "Confirmed: Backing an underdog to score against a favorite with shaky defensive/conversion track record pays off when the market underprices their goal chances. When model edge is 10%+ on \"team to score\" or BTTS at low prices, the value is real."
+ },
+ {
+  "game": "bosnia|usa",
+  "score": null,
+  "ts": "2026-07-02T02:25:36.656240+00:00",
+  "bets": [
+   {
+    "bet_id": 102,
+    "market": "Bosnia and Herzegovina over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -32.02
+   },
+   {
+    "bet_id": 103,
+    "market": "Bosnia and Herzegovina over 0.5 team goals",
+    "outcome": "lost",
+    "pnl": -27.31
+   }
+  ],
+  "lesson": "Watch out for backing an underdog's goal-scoring markets when your own analysis concludes the opponent is clearly superior \u2014 if the model rates the other side's XI and form as dominant, don't simultaneously assign large edges to the weaker team scoring. Reconcile the qualitative read with the probabilities; a 70% \"over 0.5 goals\" for the outclassed side was likely overconfident, not just variance."
+ },
+ {
+  "game": "austria|spain",
+  "score": "Spain 3-0 Austria",
+  "ts": "2026-07-03T04:01:39.702076+00:00",
+  "bets": [
+   {
+    "bet_id": 104,
+    "market": "Austria advances (incl. ET/pens)",
+    "outcome": "lost",
+    "pnl": -24.49
+   }
+  ],
+  "lesson": "Watch out for backing underdogs against elite sides purely because the market price looks low \u2014 a 26% model vs 14% market edge is meaningless if the model overweights \"anything can happen\" variance against a dominant, fully-fit favorite with an unbeaten record and clean defensive sheet. When the favorite's only flaw is finishing luck, that flaw tends to regress in their favor, not the underdog's."
+ },
+ {
+  "game": "croatia|portugal",
+  "score": "Portugal 2-1 Croatia",
+  "ts": "2026-07-03T04:01:45.557394+00:00",
+  "bets": [
+   {
+    "bet_id": 105,
+    "market": "NO: Portugal over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -31.51
+   }
+  ],
+  "lesson": "Watch out for betting against a stronger team's goal totals when your own reasoning acknowledges their dominance \u2014 full-strength elite attacks controlling possession routinely clear 1.5 team goals. A perceived price edge shouldn't override the fundamental mismatch; the market's higher probability on favorites scoring twice often reflects real attacking quality. A single loss like this is also within normal variance."
+ },
+ {
+  "game": "algeria|switzerland",
+  "score": "Switzerland 2-0 Algeria",
+  "ts": "2026-07-04T00:06:40.894899+00:00",
+  "bets": [
+   {
+    "bet_id": 107,
+    "market": "Switzerland-Algeria over 2.5 goals",
+    "outcome": "lost",
+    "pnl": -30.18
+   }
+  ],
+  "lesson": "Watch out for backing overs when one side is a dominant, controlled favorite in tournament football: superior teams often win efficiently (2-0) without pushing for extra goals, keeping totals under. A 10-point edge on overs built mostly on team-quality signals, rather than tempo/chance-creation metrics for both sides, is fragile \u2014 though a single loss like this is also within normal variance."
+ },
+ {
+  "game": "australia|egypt",
+  "score": "Australia 1-1 Egypt",
+  "ts": "2026-07-04T00:06:45.549379+00:00",
+  "bets": [
+   {
+    "bet_id": 108,
+    "market": "Egypt over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -22.75
+   }
+  ],
+  "lesson": "Watch out for translating shot-volume dominance and star attacker presence into team-total-goals overs at premium prices \u2014 a single goal remains the modal outcome for even strong attacks against organized opposition. A one-goal result here is normal variance, but demand a bigger edge before backing team overs 1.5 against the market."
+ },
+ {
+  "game": "argentina|cape verde",
+  "score": null,
+  "ts": "2026-07-04T01:13:28.633075+00:00",
+  "bets": [
+   {
+    "bet_id": 109,
+    "market": "NO: Argentina over 2.5 team goals",
+    "outcome": "won",
+    "pnl": 54.18
+   },
+   {
+    "bet_id": 110,
+    "market": "NO: Argentina over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 110.61
+   },
+   {
+    "bet_id": 111,
+    "market": "Cape Verde advances (incl. ET/pens)",
+    "outcome": "lost",
+    "pnl": -1.02
+   }
+  ],
+  "lesson": "Confirmed: markets systematically overprice goal totals for elite favorites against proven defensive underdogs \u2014 fading team-goal overs (unders) was profitable both times. But don't extend that edge to the underdog actually advancing: a stubborn defense caps the scoreline without flipping the result. Bet the low-scoring angle, not the upset."
+ },
+ {
+  "game": "canada|morocco",
+  "score": "Canada 0-3 Morocco",
+  "ts": "2026-07-05T16:17:19.640133+00:00",
+  "bets": [
+   {
+    "bet_id": 114,
+    "market": "Canada advances (incl. ET/pens)",
+    "outcome": "lost",
+    "pnl": -1.41
+   },
+   {
+    "bet_id": 116,
+    "market": "NO: Morocco advances (incl. ET/pens)",
+    "outcome": "lost",
+    "pnl": -30.0
+   },
+   {
+    "bet_id": 117,
+    "market": "NO: Morocco over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -34.29
+   }
+  ],
+  "lesson": "Watch out for betting against a clearly stronger side \"at a price\" \u2014 the model acknowledged Morocco's superiority in every writeup, yet still faded them on the advance and team-goals markets purely because the market number looked beatable. When your own reasoning identifies one team as materially better, don't let a perceived edge justify contrarian bets on the weaker side or on low-scoring outcomes against them."
+ },
+ {
+  "game": "france|paraguay",
+  "score": "Paraguay 0-1 France",
+  "ts": "2026-07-05T16:17:26.782214+00:00",
+  "bets": [
+   {
+    "bet_id": 115,
+    "market": "Paraguay advances (incl. ET/pens)",
+    "outcome": "lost",
+    "pnl": -11.11
+   },
+   {
+    "bet_id": 118,
+    "market": "NO: France advances (incl. ET/pens)",
+    "outcome": "lost",
+    "pnl": -19.16
+   }
+  ],
+  "lesson": "Watch out for betting \"value\" on longshot upsets against elite teams solely because the market price looks low. When a heavy favorite has confirmed strength, form, and full squad, a 8-9% market price on the underdog is often accurate \u2014 inflating it to 18-19% doubles a small edge into a systematic overpricing of chaos. Demand concrete upset catalysts, not just base-rate uncertainty."
+ },
+ {
+  "game": "brazil|norway",
+  "score": "Brazil 1-2 Norway",
+  "ts": "2026-07-06T05:03:40.847833+00:00",
+  "bets": [
+   {
+    "bet_id": 119,
+    "market": "Brazil over 2.5 team goals",
+    "outcome": "lost",
+    "pnl": -1.64
+   }
+  ],
+  "lesson": "Watch out for backing high team-goal totals purely off strong underlying stats (shots, possession) \u2014 favorites often underperform their xG against organized, counterattacking opponents. A single loss at 35% probability is normal variance, but demanding 3+ goals from one team is a high bar; require evidence of finishing quality and weak opposing defense, not just volume metrics."
+ },
+ {
+  "game": "england|mexico",
+  "score": "Mexico 2-3 England",
+  "ts": "2026-07-06T05:03:46.542274+00:00",
+  "bets": [
+   {
+    "bet_id": 120,
+    "market": "England advances (incl. ET/pens)",
+    "outcome": "won",
+    "pnl": 37.0
+   },
+   {
+    "bet_id": 121,
+    "market": "NO: Mexico over 1.5 team goals",
+    "outcome": "lost",
+    "pnl": -46.46
+   }
+  ],
+  "lesson": "The favorite-side edge held but the underdog's scoring output didn't: backing the stronger team to advance can be correct even when they concede more than expected. Don't couple \"team A wins\" with \"team B stays quiet\"\u2014a superior side can win shootout-style games. Treat unders on the underdog's goals as a separate, riskier bet, not a byproduct of the winner call."
+ },
+ {
+  "game": "portugal|spain",
+  "score": null,
+  "ts": "2026-07-06T21:28:03.112655+00:00",
+  "bets": [
+   {
+    "bet_id": 122,
+    "market": "NO: Portugal-Spain over 2.5 goals",
+    "outcome": "won",
+    "pnl": 32.92
+   },
+   {
+    "bet_id": 123,
+    "market": "NO: Spain over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 28.64
+   },
+   {
+    "bet_id": 124,
+    "market": "NO: Portugal-Spain both teams score",
+    "outcome": "won",
+    "pnl": 27.58
+   }
+  ],
+  "lesson": "Confirmed: in high-stakes matches between two elite full-strength sides, unders and \"no\" goal markets are often underpriced \u2014 the public overweights star attacking talent while cautious tactics and strong defenses suppress scoring. When one team has elite defensive numbers (e.g., zero conceded in the tournament), fading goals across correlated low-scoring markets can offer consistent edge."
+ },
+ {
+  "game": "belgium|usa",
+  "score": "United States 1-4 Belgium",
+  "ts": "2026-07-07T10:52:58.523251+00:00",
+  "bets": [
+   {
+    "bet_id": 127,
+    "market": "NO: USA over 1.5 team goals",
+    "outcome": "won",
+    "pnl": 25.67
+   },
+   {
+    "bet_id": 128,
+    "market": "NO: USA over 0.5 team goals",
+    "outcome": "lost",
+    "pnl": -14.18
+   }
+  ],
+  "lesson": "Confirmed: fading a weaker team's goal totals based on the stronger side's chance-creation dominance is sound, but bet the moderate line (under 1.5) rather than the extreme one (clean sheet). Even dominated underdogs often snag a single goal, so shutout bets carry thin margins; results here were consistent with that expected variance."
+ },
+ {
+  "game": "argentina|egypt",
+  "score": "Argentina 3-2 Egypt",
+  "ts": "2026-07-07T18:30:16.061491+00:00",
+  "bets": [
+   {
+    "bet_id": 125,
+    "market": "Egypt advances (incl. ET/pens)",
+    "outcome": "lost",
+    "pnl": -18.28
+   },
+   {
+    "bet_id": 126,
+    "market": "Egypt over 0.5 team goals",
+    "outcome": "won",
+    "pnl": 26.65
+   }
+  ],
+  "lesson": "Mixed but consistent with the model's own logic: underdogs with elite attackers (Salah-type) can score against stronger sides without seriously threatening to advance. Prefer backing underdog goals/team totals over underdog advancement when the edge comes from attacking talent rather than overall squad quality. The advancement loss at 26% is normal variance, not a model error."
+ },
+ {
+  "game": "colombia|switzerland",
+  "score": "Switzerland 0-0 Colombia",
+  "ts": "2026-07-08T07:26:20.474634+00:00",
+  "bets": [
+   {
+    "bet_id": 113,
+    "market": "Colombia advances (incl. ET/pens)",
+    "outcome": "lost",
+    "pnl": -52.65
+   }
+  ],
+  "lesson": "Watch out for large model edges (73% vs 54%) on \"advances\" markets that hinge on extra time and penalties \u2014 shootouts are near coin-flips regardless of team quality, so cap your true probability closer to the market. A 0-0 draw shows how easily perceived superiority evaporates into a lottery; treat this loss as expected variance, but shade advancement probabilities toward 50-60% when penalties are plausible."
+ },
+ {
+  "game": "france|morocco",
+  "score": "France 2-0 Morocco",
+  "ts": "2026-07-10T12:15:32.951799+00:00",
+  "bets": [
+   {
+    "bet_id": 129,
+    "market": "Morocco advances (incl. ET/pens)",
+    "outcome": "lost",
+    "pnl": -22.79
+   }
+  ],
+  "lesson": "Watch out for backing underdogs purely on a perceived market mispricing when your own reasoning highlights the favorite's dominance across every fundamental (form, squad strength, attack quality). A modest model edge (32% vs 23%) on a defensive underdog is fragile; a single loss here is normal variance, but ensure the edge isn't just narrative-driven optimism about resilient defenses."
+ },
+ {
+  "game": "france|spain",
+  "score": "France 0-2 Spain",
+  "ts": "2026-07-15T01:04:46.848741+00:00",
+  "bets": [
+   {
+    "bet_id": 130,
+    "market": "NO: France-Spain both teams score",
+    "outcome": "won",
+    "pnl": 41.99
+   }
+  ],
+  "lesson": "Confirmed: in elite-vs-elite matchups, don't assume both defenses get breached just because both attacks are strong \u2014 top sides often produce lopsided or clean-sheet results. When the model sees a near coin-flip but the market prices BTTS-No cheaply, that edge is worth taking. Single-bet sample, though \u2014 treat as consistent with normal variance."
+ },
+ {
+  "game": "argentina|spain",
+  "score": null,
+  "ts": "2026-07-19T21:45:46.493573+00:00",
+  "bets": [
+   {
+    "bet_id": 131,
+    "market": "NO: Spain-Argentina both teams score",
+    "outcome": "won",
+    "pnl": 48.08
+   }
+  ],
+  "lesson": "Confirmed: in elite-vs-elite matchups, especially with a recent head-to-head goalless result, low-scoring outcomes (No BTTS, unders) are often underpriced by markets that default to expecting goals from strong attacks. Recent direct-matchup evidence between the same sides is a strong signal worth backing when it diverges from market price."
+ }
+]
