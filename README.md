@@ -114,7 +114,7 @@ python -m src.web                                  # betting desk at :8000
 | `src/web.py` | Betting-desk backend |
 | `src/publish.py` | Writes structured JSON for the public site |
 
-## Config (`.env`, never committed)
+## Config (`.env`)
 
 - `MONKS_API_KEY` — SportMonks data.
 - `ANTHROPIC_API_KEY` — the reasoning layer.
