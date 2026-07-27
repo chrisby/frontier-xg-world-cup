@@ -1,0 +1,20 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets — never commit
+kalshi_private_key.txt
+
+# API cache — large and ephemeral
+data/cache.db
+data/bets.db
+
+# Derived data files (large, regenerated at runtime)
+data/*.json
+
+# Personal notes
+NOTES.md
+
+# Copyrighted schedule PDF
+FWC26 Match Schedule_v17_10042026_EN.pdf

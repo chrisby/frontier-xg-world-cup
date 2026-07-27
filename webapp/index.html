@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WC2026 · Betting Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a120d; --bg2:#0c1611; --surf:#101b14; --surf2:#13241b;
+  --line:rgba(140,200,150,.12); --line2:rgba(140,200,150,.22);
+  --ink:#e9f1ea; --dim:#7f9a86; --dimmer:#54695a;
+  --lime:#c9f24e; --go:#54e08a; --amber:#f5b73e; --live:#ff5d5d;
+  --mono:'JetBrains Mono',monospace; --disp:'Bricolage Grotesque',sans-serif; --body:'Hanken Grotesk',sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(60,120,75,.18), transparent 60%),
+    radial-gradient(900px 500px at 0% 110%, rgba(40,90,55,.16), transparent 55%),
+    var(--bg);
+  color:var(--ink); font-family:var(--body); -webkit-font-smoothing:antialiased;
+  font-size:15px; line-height:1.45;
+}
+/* grain */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:99;opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+.wrap{max-width:1240px;margin:0 auto;padding:26px 26px 80px}
+
+/* ---------- header ---------- */
+header{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;
+  padding-bottom:20px;border-bottom:1px solid var(--line);position:relative}
+.brand{display:flex;align-items:center;gap:16px}
+.crest{width:48px;height:48px;border:1.5px solid var(--line2);border-radius:50%;
+  display:grid;place-items:center;position:relative;flex:0 0 auto;
+  background:linear-gradient(160deg,var(--surf2),var(--surf))}
+.crest::before{content:"";width:1.5px;height:100%;background:var(--line2);position:absolute}
+.crest::after{content:"";width:18px;height:18px;border:1.5px solid var(--line2);border-radius:50%}
+.brand h1{font-family:var(--disp);font-weight:800;font-size:25px;letter-spacing:-.5px;margin:0;line-height:1}
+.brand .sub{font-family:var(--mono);font-size:10.5px;letter-spacing:3px;color:var(--dim);text-transform:uppercase;margin-top:5px}
+.hud{display:flex;align-items:center;gap:22px}
+.hud .stat{text-align:right}
+.hud .lbl{font-family:var(--mono);font-size:9.5px;letter-spacing:2px;color:var(--dimmer);text-transform:uppercase}
+.hud .val{font-family:var(--mono);font-weight:700;font-size:20px;color:var(--ink);line-height:1.1}
+.hud .val.bal{color:var(--lime)}
+.btn{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;
+  background:var(--surf2);color:var(--ink);border:1px solid var(--line2);
+  padding:9px 14px;border-radius:8px;cursor:pointer;transition:.15s}
+.btn:hover{border-color:var(--lime);color:var(--lime)}
+.btn:active{transform:translateY(1px)}
+
+/* ---------- ticker / actions ---------- */
+.ticker{display:flex;align-items:center;gap:14px;margin:18px 0 22px;
+  font-family:var(--mono);font-size:12px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:999px;
+  border:1px solid var(--line2);background:var(--surf);color:var(--dim);letter-spacing:.5px}
+.pill b{color:var(--ink);font-weight:700}
+.pill.hot{border-color:rgba(84,224,138,.4);background:rgba(84,224,138,.08);color:var(--go)}
+.dot{width:7px;height:7px;border-radius:50%;background:currentColor;flex:0 0 auto}
+.pulse{animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(84,224,138,.5)}50%{opacity:.55;box-shadow:0 0 0 6px rgba(84,224,138,0)}}
+
+/* ---------- layout ---------- */
+.grid{display:grid;grid-template-columns:1.45fr 1fr;gap:26px;align-items:start}
+@media(max-width:980px){.grid{grid-template-columns:1fr}}
+.col h2{font-family:var(--mono);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--dim);margin:0 0 14px;display:flex;justify-content:space-between;align-items:center}
+
+/* ---------- game cards ---------- */
+.feed{display:flex;flex-direction:column;gap:9px;max-height:72vh;overflow:auto;padding-right:6px}
+.feed::-webkit-scrollbar{width:8px}.feed::-webkit-scrollbar-thumb{background:var(--line2);border-radius:8px}
+.game{display:grid;grid-template-columns:62px 1fr 116px;gap:14px;align-items:center;
+  background:linear-gradient(180deg,var(--surf),var(--bg2));border:1px solid var(--line);
+  border-radius:12px;padding:13px 15px;opacity:0;transform:translateY(8px);
+  animation:rise .5s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.game{cursor:pointer}
+.game:hover{border-color:var(--line2)}
+.game .when{font-family:var(--mono);text-align:center}
+.game .when .d{font-size:13px;font-weight:700;color:var(--ink)}
+.game .when .t{font-size:10px;color:var(--dim)}
+.game .tt{min-width:0}
+.game .teams{font-family:var(--disp);font-weight:700;font-size:16.5px;letter-spacing:-.3px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.game .teams .vs{color:var(--dimmer);font-weight:500;margin:0 7px;font-size:13px}
+.game .meta{font-family:var(--mono);font-size:10px;letter-spacing:.5px;color:var(--dim);
+  margin-top:4px;display:flex;gap:10px;align-items:center}
+.mkt{display:inline-flex;align-items:center;gap:5px}
+.mkt .dot{width:6px;height:6px}
+.mkt.on{color:var(--go)} .mkt.off{color:var(--dimmer)}
+.right{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.badge{font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  padding:4px 9px;border-radius:6px;border:1px solid transparent;white-space:nowrap}
+.badge.run_now{color:#06140b;background:var(--go)}
+.badge.analyze{color:var(--amber);background:rgba(245,183,62,.1);border-color:rgba(245,183,62,.35)}
+.badge.scheduled{color:var(--dim);background:var(--surf2);border-color:var(--line2)}
+.badge.live{color:#fff;background:var(--live)}
+.badge.finished{color:var(--dimmer);background:transparent;border-color:var(--line)}
+.badge.analyzed{color:var(--lime);background:rgba(199,255,109,.08);border-color:rgba(199,255,109,.3)}
+.cd{font-family:var(--mono);font-size:11px;color:var(--dim);min-width:78px;text-align:right}
+.cd.soon{color:var(--go)}
+.analyze-b{font-family:var(--mono);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;
+  background:transparent;color:var(--lime);border:1px solid rgba(201,242,78,.4);
+  padding:7px 11px;border-radius:7px;cursor:pointer;transition:.15s}
+.analyze-b:hover{background:var(--lime);color:#0a120d}
+.analyze-b:disabled{opacity:.4;cursor:wait}
+
+/* ---------- desk panel ---------- */
+.panel{background:linear-gradient(180deg,var(--surf),var(--bg2));border:1px solid var(--line);
+  border-radius:14px;padding:18px;position:sticky;top:20px;min-width:0;overflow:hidden}
+.panel .head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.panel .head .who{font-family:var(--disp);font-weight:800;font-size:18px}
+.out{font-family:var(--mono);font-size:11.5px;line-height:1.5;white-space:pre-wrap;
+  background:#08110b;border:1px solid var(--line);border-radius:10px;padding:14px;
+  max-height:48vh;overflow:auto;overflow-x:hidden;word-break:break-word;color:#cfe0d3;
+  min-height:80px}
+.out::-webkit-scrollbar{width:8px}.out::-webkit-scrollbar-thumb{background:var(--line2);border-radius:8px}
+.placebar{display:flex;gap:10px;margin-top:13px;align-items:center}
+.place-b{flex:1;font-family:var(--mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;
+  background:var(--go);color:#06140b;border:none;padding:12px;border-radius:9px;cursor:pointer;transition:.15s}
+.place-b:hover{filter:brightness(1.08)}.place-b:disabled{opacity:.35;cursor:not-allowed}
+.fut-b{width:100%;font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;
+  background:var(--surf2);color:var(--lime);border:1px dashed rgba(201,242,78,.4);
+  padding:12px;border-radius:9px;cursor:pointer;margin-top:10px}
+.fut-b:hover{background:rgba(201,242,78,.07)}
+.refresh-flag{font-family:var(--mono);font-size:11px;color:var(--amber);
+  border:1px solid rgba(255,176,32,.4);background:rgba(255,176,32,.08);
+  border-radius:9px;padding:8px 12px;margin-top:8px;line-height:1.5}
+.ledger{font-family:var(--mono);font-size:11.5px;color:var(--dim);line-height:1.7;
+  border-top:1px solid var(--line);margin-top:16px;padding-top:14px;white-space:pre-wrap}
+.muted{color:var(--dimmer);font-family:var(--mono);font-size:11.5px}
+.spin{display:inline-block;width:12px;height:12px;border:2px solid var(--line2);
+  border-top-color:var(--lime);border-radius:50%;animation:sp .7s linear infinite;vertical-align:middle}
+@keyframes sp{to{transform:rotate(360deg)}}
+.flash{animation:flash .6s ease}@keyframes flash{from{background:rgba(201,242,78,.12)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="crest"></div>
+      <div>
+        <h1>BETTING DESK</h1>
+        <div class="sub">FIFA World Cup 2026 · Kalshi</div>
+      </div>
+    </div>
+    <div class="hud">
+      <div class="stat"><div class="lbl">Bankroll</div><div class="val bal" id="bal">—</div></div>
+      <div class="stat"><div class="lbl">UTC</div><div class="val" id="clock">—</div></div>
+      <button class="btn" id="refresh">↻ Refresh</button>
+    </div>
+  </header>
+
+  <div class="ticker" id="ticker"></div>
+
+  <div class="grid">
+    <div class="col">
+      <h2><span>Fixtures</span><span id="feedcount" class="muted"></span></h2>
+      <div class="feed" id="feed"><div class="muted">Loading schedule…</div></div>
+    </div>
+    <div class="col">
+      <h2>The Desk</h2>
+      <div class="panel">
+        <div class="head">
+          <div class="who" id="deskwho">No match selected</div>
+        </div>
+        <div class="out" id="out">Pick a fixture and hit <b style="color:var(--lime)">Analyze</b>.
+The model builds a dossier, reasons through it, prices the full market board, and shows the capped ½-Kelly bet sheet here.</div>
+        <div class="placebar" id="placebar" style="display:none">
+          <button class="place-b" id="placeb">▶ Place these bets</button>
+        </div>
+        <button class="fut-b" id="futb">⚄ Build futures bets · Winner + Golden Boot</button>
+        <button class="fut-b" id="settleb">⚖ Check Kalshi settlements</button>
+        <button class="fut-b" id="publishb">⇪ Publish data to website</button>
+        <button class="fut-b" id="deployb">⇪ Deploy site (publish to christian.bock.bio)</button>
+        <div class="refresh-flag" id="refreshFlag" style="display:none"></div>
+        <div class="ledger" id="ledger"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+let STATE = null, current = null;
+
+const fmtMoney = v => v==null ? "—" : "$"+Number(v).toFixed(2);
+function pad(n){return String(n).padStart(2,"0")}
+function clockTick(){
+  const d=new Date();
+  $("#clock").textContent = pad(d.getUTCHours())+":"+pad(d.getUTCMinutes())+":"+pad(d.getUTCSeconds());
+  document.querySelectorAll("[data-ko]").forEach(el=>{
+    const ms = new Date(el.dataset.ko).getTime() - Date.now();
+    el.textContent = countdown(ms); el.classList.toggle("soon", ms>0 && ms<2*3600*1000);
+  });
+}
+function countdown(ms){
+  if(ms<-8000*1000) return "full time";
+  if(ms<0) return "in play";
+  const h=Math.floor(ms/3600000), m=Math.floor(ms%3600000/60000);
+  if(h>=24){const dd=Math.floor(h/24);return dd+"d "+(h%24)+"h"}
+  return h+"h "+pad(m)+"m";
+}
+const BADGE = {run_now:"▶ Run now", analyze:"Analyze today", scheduled:"Scheduled", live:"● Live", finished:"FT", placeholder:"TBD"};
+function analysisChip(a){
+  if(!a) return "";
+  let label, color;
+  if(a.n_placed>0){ label="● "+a.n_placed+" placed"; color="var(--go)"; }
+  else if(a.n_rec>0){ label="◆ "+a.n_rec+" rec"; color="var(--lime)"; }
+  else { label="✓ analyzed · no edge"; color="var(--dim)"; }
+  return `<span class="mkt" style="color:${color}" title="${a.summary||''}"><span class="dot"></span>${label}</span>`;
+}
+function pnlChip(a){
+  if(!a||a.pnl==null) return "";
+  const sign=a.pnl>=0?"+":"";
+  return `<span class="mkt" style="color:${a.pnl>=0?'var(--go)':'var(--live)'}">`
+    +`<span class="dot"></span>P/L ${sign}$${a.pnl.toFixed(2)}</span>`;
+}
+
+async function load(){
+  $("#feed").innerHTML = '<div class="muted">Loading schedule…</div>';
+  const r = await fetch("/api/state"); STATE = await r.json();
+  $("#bal").textContent = fmtMoney(STATE.bankroll);
+  $("#ledger").textContent = STATE.ledger || "";
+  const rf=$("#refreshFlag"), nr=STATE.needs_refresh||[];
+  if(nr.length){
+    rf.style.display="";
+    rf.textContent=`⚠ ${nr.length} team${nr.length>1?"s":""} played since last rated — `
+      +`hit Build futures to re-rate: ${nr.join(", ")}`;
+  }else rf.style.display="none";
+  renderTicker(); renderFeed();
+}
+function renderTicker(){
+  const a=STATE.actions, parts=[];
+  if(a.run_now.length) parts.push(`<span class="pill hot"><span class="dot pulse"></span>RUN NOW · <b>${a.run_now.length}</b> match${a.run_now.length>1?"es":""} within 2h</span>`);
+  parts.push(`<span class="pill"><span class="dot" style="color:var(--amber)"></span>Analyze today · <b>${a.today.length}</b></span>`);
+  const anyPriced = STATE.games.some(g=>g.priced);
+  parts.push(`<span class="pill"><span class="dot" style="color:${anyPriced?'var(--go)':'var(--dimmer)'}"></span>Kalshi books · <b>${anyPriced?'live':'not priced yet'}</b></span>`);
+  const h=STATE.health||{};
+  if(h.tripped) parts.push(`<span class="pill" style="border-color:var(--live);background:rgba(255,93,93,.1);color:var(--live)"><span class="dot pulse"></span>KILL-SWITCH · <b>placement blocked</b></span>`);
+  else parts.push(`<span class="pill"><span class="dot" style="color:var(--go)"></span>Model · <b>${(h.reason||'healthy').replace('active ','').replace('healthy over','ok:')}</b></span>`);
+  $("#ticker").innerHTML = parts.join("");
+}
+function renderFeed(){
+  const games=[...STATE.games].sort((x,y)=> new Date(x.kickoff)-new Date(y.kickoff));
+  const shown=games;
+  const fin=games.filter(g=>g.phase==="finished").length;
+  $("#feedcount").textContent = shown.filter(g=>g.phase!=="finished").length+" upcoming · "+fin+" played";
+  $("#feed").innerHTML = shown.map((g,i)=>{
+    const ko=new Date(g.kickoff);
+    const day=ko.toLocaleDateString("en-US",{month:"short",day:"numeric",timeZone:"UTC"});
+    const tm=pad(ko.getUTCHours())+":"+pad(ko.getUTCMinutes());
+    const pt=ko.toLocaleTimeString("en-US",{hour:"numeric",minute:"2-digit",timeZone:"America/Los_Angeles"});
+    const canAnalyze = g.phase==="run_now"||g.phase==="analyze"||g.phase==="scheduled";
+    const analyzed = !!g.analysis;
+    const showAnalyzed = analyzed && (g.phase==="run_now"||g.phase==="analyze");
+    const badgeText = showAnalyzed ? "✓ Analyzed" : BADGE[g.phase];
+    const badgeCls = showAnalyzed ? "analyzed" : g.phase;
+    return `<div class="game" data-h="${g.home}" data-a="${g.away}" style="animation-delay:${Math.min(i*28,560)}ms">
+      <div class="when"><div class="d">${day}</div><div class="t">${tm}Z</div><div class="t">${pt} PT</div></div>
+      <div class="tt">
+        <div class="teams">${g.home}<span class="vs">v</span>${g.away}</div>
+        <div class="meta"><span>${g.stage}</span>
+          <span class="mkt ${g.priced?'on':'off'}"><span class="dot"></span>${g.priced?'priced':'unpriced'}</span>
+          ${analysisChip(g.analysis)}${pnlChip(g.analysis)}</div>
+      </div>
+      <div class="right">
+        <span class="badge ${badgeCls} ${g.phase==='run_now' && !analyzed?'pulse':''}">${badgeText}</span>
+        <span class="cd" data-ko="${g.kickoff}"></span>
+        ${canAnalyze?`<button class="analyze-b" data-h="${g.home}" data-a="${g.away}">Analyze ▸</button>`:""}
+      </div>
+    </div>`;
+  }).join("") || '<div class="muted">No upcoming fixtures.</div>';
+  document.querySelectorAll(".analyze-b").forEach(b=>b.onclick=(e)=>{e.stopPropagation();analyze(b.dataset.h,b.dataset.a,b)});
+  document.querySelectorAll(".game").forEach(el=>el.onclick=()=>loadDossier(el.dataset.h,el.dataset.a));
+  clockTick();
+  scrollToNext();
+}
+let _scrolledNext=false;
+function scrollToNext(){
+  if(_scrolledNext)return;
+  const feed=$("#feed");
+  const cards=feed.querySelectorAll(".game");
+  const idx=([...STATE.games].sort((x,y)=>new Date(x.kickoff)-new Date(y.kickoff))).findIndex(g=>g.phase!=="finished");
+  if(idx<=0||!cards[idx])return;
+  _scrolledNext=true;
+  const fr=feed.getBoundingClientRect(),er=cards[idx].getBoundingClientRect();
+  feed.scrollTop+=(er.top-fr.top)-8;
+}
+
+const pctn = x => x==null ? "—" : Math.round(x*100)+"%";
+
+function renderDossier(d){
+  const r=d.reasoning||{};
+  const lines=[];
+  lines.push(`${d.home} ${pctn(r.p_home)} / draw ${pctn(r.p_draw)} / ${d.away} ${pctn(r.p_away)}  `
+    +`(confidence: ${r.confidence||"—"})`);
+  lines.push(`Expected goals — ${d.home} ${r.xg_home} – ${d.away} ${r.xg_away}`);
+  lines.push("");
+  lines.push(`[${r.model||"model"}] ${r.rationale||""}`);
+  if(r.key_factors&&r.key_factors.length){
+    lines.push("");
+    lines.push("Key factors:");
+    r.key_factors.forEach(f=>lines.push("  - "+f));
+  }
+  lines.push("");
+  if(d.bets&&d.bets.length){
+    lines.push(`BET SHEET — bankroll $${Number(d.bankroll||0).toFixed(2)}`);
+    lines.push("-".repeat(70));
+    d.bets.forEach(b=>{
+      const anchor = b.sharp_p!=null ? `sharp ${pctn(b.sharp_p)}` : "no-anchor";
+      lines.push(`${b.market.padEnd(36)} | model ${pctn(b.model_p)} ${anchor} vs ${b.price_cents}c `
+        +`| edge +${Math.round(b.edge*100)}% | BUY ${b.side.toUpperCase()} ${b.contracts} = $${b.stake}`);
+    });
+  } else {
+    lines.push("No bets clear the bar on this match's markets.");
+  }
+  if(d.no_bets&&d.no_bets.length){
+    lines.push("");
+    lines.push(`Why no bet on the other ${d.no_bets.length} market${d.no_bets.length===1?"":"s"}:`);
+    d.no_bets.forEach(n=>lines.push(`  - ${n.market}: ${n.reason}`));
+  }
+  lines.push("");
+  lines.push(`Updated: ${d.updated||"—"}`);
+  return lines.join("\n");
+}
+
+async function loadDossier(home,away){
+  current={home,away};
+  $("#deskwho").textContent = home+" v "+away;
+  $("#placebar").style.display="none";
+  $("#out").innerHTML = '<span class="spin"></span> Loading saved analysis…';
+  try{
+    const r=await fetch(`/api/dossier?home=${encodeURIComponent(home)}&away=${encodeURIComponent(away)}`);
+    const d=await r.json();
+    if(!d.ok){
+      $("#out").innerHTML = `No saved analysis for ${home} v ${away} yet — hit `
+        +`<b style="color:var(--lime)">Analyze ▸</b> to run one.`;
+      return;
+    }
+    const out=$("#out"); out.textContent=renderDossier(d.result);
+    out.classList.remove("flash"); void out.offsetWidth; out.classList.add("flash");
+    if(d.n_unplaced>0){
+      $("#placebar").style.display="flex";
+      const blocked=(STATE.health||{}).tripped;
+      $("#placeb").disabled=blocked;
+      $("#placeb").textContent=blocked?"⛔ Blocked (kill-switch)":"▶ Place "+d.n_unplaced+" bet"+(d.n_unplaced>1?"s":"");
+    }
+  }catch(e){ $("#out").textContent="Error: "+e; }
+}
+
+let _analyzing=false;
+function setAnalyzing(on,activeBtn){
+  _analyzing=on;
+  document.querySelectorAll(".analyze-b").forEach(b=>{
+    if(b===activeBtn) return;
+    b.disabled=on;
+  });
+}
+async function analyze(home,away,btn){
+  if(_analyzing) return;
+  current={home,away};
+  $("#deskwho").textContent = home+" v "+away;
+  $("#placebar").style.display="none";
+  $("#out").innerHTML = '<span class="spin"></span> Reasoning through the dossier… <span class="muted">(can take several minutes, '+(STATE.model||"model")+')</span>';
+  if(btn){btn.disabled=true;btn.textContent="…"}
+  setAnalyzing(true,btn);
+  try{
+    const r=await fetch("/api/analyze",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({home,away})});
+    const d=await r.json();
+    const out=$("#out"); out.textContent=d.text||"(no output)"; out.classList.remove("flash");void out.offsetWidth;out.classList.add("flash");
+    if(d.ok && d.n_bets>0){ $("#placebar").style.display="flex";
+      const blocked=(STATE.health||{}).tripped;
+      $("#placeb").disabled=blocked;
+      $("#placeb").textContent=blocked?"⛔ Blocked (kill-switch)":"▶ Place "+d.n_bets+" bet"+(d.n_bets>1?"s":""); }
+  }catch(e){ $("#out").textContent="Error: "+e; }
+  setAnalyzing(false,btn);
+  if(btn){btn.disabled=false;btn.textContent="Analyze ▸"}
+}
+
+$("#placeb").onclick=async()=>{
+  if(!current) return;
+  const b=$("#placeb"); b.disabled=true; b.textContent="Placing…";
+  const r=await fetch("/api/place",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(current)});
+  const d=await r.json();
+  const lines=(d.results||[]).map(x=>(x.ok?"✓ ":"✗ ")+x.msg).join("\n")||"Nothing placed.";
+  $("#out").textContent += "\n\n— PLACEMENT —\n"+lines;
+  b.textContent="Placed"; setTimeout(load,1200);
+};
+
+let futTimer=null;
+async function pollFutures(){
+  let d; try{ d=await (await fetch("/api/futures/progress")).json(); }catch(e){ return; }
+  const b=$("#futb");
+  if(d.status==="running"){
+    const pct=Math.round(d.rated/d.total*100);
+    const phase = d.rated>=d.total ? "Simulating tournament + pricing vs sharp lines…"
+                                   : `Reasoning team ratings · ${d.rated}/${d.total}`;
+    $("#out").innerHTML = `<div style="margin-bottom:10px;color:var(--lime)">${phase}</div>`+
+      `<div style="height:9px;background:#08110b;border:1px solid var(--line);border-radius:6px;overflow:hidden">`+
+      `<div style="height:100%;width:${pct}%;background:linear-gradient(90deg,var(--go),var(--lime));transition:width .5s"></div></div>`+
+      `<div style="margin-top:8px;color:var(--dim);font-size:10.5px">Runs in the background — safe to leave this tab.</div>`;
+    b.disabled=true; b.textContent="⚄ Building… "+d.rated+"/"+d.total;
+    futTimer=setTimeout(pollFutures,2500);
+  } else {
+    if(d.text){ $("#out").textContent=d.text; }
+    b.disabled=false; b.textContent="⚄ Build futures bets · Winner + Golden Boot";
+    futTimer=null;
+  }
+}
+$("#futb").onclick=async()=>{
+  if(!confirm("Build futures bets? A cold run reasons ratings for all 48 teams (~$5, ~12 min) then prices Winner + Golden Boot vs Polymarket. Cached after — later runs are instant. Runs in the background.")) return;
+  $("#deskwho").textContent="Futures · Winner + Golden Boot";
+  await fetch("/api/futures",{method:"POST"});
+  if(!futTimer) pollFutures();
+};
+
+let deployTimer=null;
+async function pollDeploy(){
+  let d; try{ d=await (await fetch("/api/deploy/progress")).json(); }catch(e){ return; }
+  const b=$("#deployb");
+  if(d.status==="running"){
+    b.disabled=true; b.textContent="⇪ Deploying…";
+    deployTimer=setTimeout(pollDeploy,2500);
+  } else {
+    if(d.text){ $("#out").textContent="— DEPLOY —\n"+d.text; }
+    b.disabled=false; b.textContent="⇪ Deploy site (publish to christian.bock.bio)";
+    deployTimer=null;
+  }
+}
+$("#deployb").onclick=async()=>{
+  if(!confirm("Deploy the site now? This rebuilds the Hugo site and rsyncs it to christian.bock.bio — the public page will update immediately.")) return;
+  $("#deskwho").textContent="Deploying site…";
+  await fetch("/api/deploy",{method:"POST"});
+  if(!deployTimer) pollDeploy();
+};
+
+$("#settleb").onclick=async()=>{
+  const b=$("#settleb"); b.disabled=true; b.textContent="⚖ Checking…";
+  try{
+    const r=await fetch("/api/check-settlements",{method:"POST"});
+    const d=await r.json();
+    $("#out").textContent=d.text;
+    if(d.ok && d.n>0) setTimeout(load,500);
+  } finally {
+    b.disabled=false; b.textContent="⚖ Check Kalshi settlements";
+  }
+};
+
+$("#publishb").onclick=async()=>{
+  const b=$("#publishb"); b.disabled=true; b.textContent="⇪ Publishing…";
+  try{
+    const r=await fetch("/api/publish",{method:"POST"});
+    const d=await r.json();
+    $("#out").textContent=d.text;
+  } finally {
+    b.disabled=false; b.textContent="⇪ Publish data to website";
+  }
+};
+
+$("#refresh").onclick=load;
+setInterval(clockTick,1000);
+setInterval(load,60000);
+load();
+pollFutures();  // reattach to an in-progress build if the tab was reopened
+pollDeploy();   // reattach to an in-progress deploy if the tab was reopened
+</script>
+</body>
+</html>
