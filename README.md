@@ -20,7 +20,7 @@ disciplined sizing turns a razor-thin accuracy edge into real compounding.
 |--------|-------|------------|
 | Total return | **+202%** | $255 → $771 on the starting bankroll |
 | Return on turnover | +20.7% | net P/L ÷ total staked |
-| Record | 62–59 | won / lost — barely above a coin flip, by design |
+| Record | 62–59 | won / lost |
 | Brier score | **0.234** vs market **0.251** | our probability vs the Kalshi entry price, scored against realized outcomes — lower is better |
 
 ## How we do it
